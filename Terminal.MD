@@ -1,5 +1,5 @@
 
-###关闭回显，缓冲，中断
+#关闭回显，缓冲，中断
 
 ```C
 if (tcgetattr(0, &raw) == -1)
@@ -13,7 +13,7 @@ tcsetattr(0, TCSAFLUSH, &raw);
 ```
 
 
-###打开回显，缓冲，中断
+#打开回显，缓冲，中断
 
 ```C
 if (tcgetattr(0, &raw) == -1)
@@ -28,7 +28,7 @@ return tcsetattr(0, TCSAFLUSH, &raw);
 
 
 
-###终端控制键
+#终端控制键
 
 ```Scheme
 上 : #\esc #\[ #\A
@@ -41,7 +41,7 @@ return tcsetattr(0, TCSAFLUSH, &raw);
 ```
 
 
-###终端Ctrl命令:
+#终端Ctrl命令:
 
 ```Scheme
 Ctrl + A : #\x01
